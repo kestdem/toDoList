@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Görev Takip Uygulaması</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/login.css">
+  
+</head>
+<body>
+  <div class="container hidden" id="toDoListCont">
+    <h1>Görev Takip Uygulaması</h1>
+    <div class="input-container">
+        <button id="backButton" onclick="backButon()" class="back-btn">&#8592;</button>
+      <label for="dateInput">Tarih Seç:</label>
+      <input type="date" id="dateInput" />
+    </div>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Görev ekleyin..." />
+    </div>
+    <div class="input-container">
+      <button id="addTaskBtn">Ekle</button>
+    </div>
+    <div class="input-container">
+        <button id="showPastTasksBtn" class="btn btn-secondary">Geçmiş Tarihleri Gör</button>
+        <button id="showFutureTasksBtn" class="btn btn-primary">Bugün ve Sonrası</button>
+    </div>
+    <div id="taskContainer"></div>
+  </div>
+  <div class="containr " id="container-loginForm">
+      <h2>Giriş Yap</h2>
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <div class="password-wrapper">
+          <input type="password" id="loginPassword" placeholder="Şifre" required>
+          <span class="toggle-password" id="togglePassword">
+          </span>
+        </div>
+        <button type="submit">Giriş Yap</button>
+    </form>                 
+    </div>
+  <script type="module" src="assets/js/script.js"></script>
+</body>
+</html>

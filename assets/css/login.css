@@ -1,0 +1,79 @@
+
+
+.containr {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* #backButton için gerekli */
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    padding-right: 40px; /* Göz simgesi için boşluk */
+}
+
+.password-wrapper .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+}
+
+.password-wrapper .toggle-password:hover {
+    color: #000;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Form elemanları genişlik açısından tutarlı */
+    box-sizing: border-box; /* İçerik genişliğini hesaba katar */
+}
+
+
+.switch {
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff;
+    cursor: pointer;
+}
+
+#backButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+#backButton:hover {
+    color: #007bff;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
